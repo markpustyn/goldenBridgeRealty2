@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ContactForm from "../components/contactForm";
 
 function Contact() {
@@ -10,7 +9,7 @@ function Contact() {
           <div>
             <h2 className="text-5xl font-bold mb-4">Contact Us</h2>
             <p className="text-gray-600">
-            We're excited to show you how Proval Capitals advanced solutions for property inspection solutions can boost your efficiency, 
+            We are excited to show you how Proval Capitals advanced solutions for property inspection solutions can boost your efficiency, 
             improve turnaround times, and help you manage orders with confidence. 
             To schedule a personalized demo, fill out the form and a team member will reach out shortly.
             </p>

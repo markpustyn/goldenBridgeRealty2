@@ -1,24 +1,35 @@
-import { AiOutlineCamera } from "react-icons/ai";
-import { BsHousesFill } from "react-icons/bs";
-import { FaHouseDamage, FaPencilRuler } from "react-icons/fa";
+import { TextAnimate } from "@/components/magicui/text-animate";
 
-const About = () => {
-  const icons = [AiOutlineCamera, BsHousesFill, FaHouseDamage, FaPencilRuler];
-  const titles = ['Inspections', 'BPOs', 'REO', 'Appraisals'];
-
+export default function About() {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-3xl py-4">Our Services</h1>
-      <div className="flex flex-wrap justify-center">
-        {icons.map((Icon, index) => (
-          <div key={index} className="m-4 text-center mx-4 sm:mx-8 md:mx-12 lg:mx-20">
-            <Icon size={48} />
-            <p className="mt-2 text-sm sm:text-base">{titles[index]}</p>
+    <div className="bg-white text-gray-900 px-6 flex flex-col items-center pt-48 pb-10">
+      <section className="mb-24 text-center max-w-7xl">
+        <h2 className="text-6xl md:text-7xl font-bold mb-12 leading-tight">
+          <TextAnimate animation="blurInUp" by="character" once>
+            How It Works
+            </TextAnimate>
+        </h2>
+        <div className="grid md:grid-cols-3 gap-16">
+          <div>
+            <h3 className="text-3xl font-semibold mb-4">1. Create an Order</h3>
+            <p className="text-lg leading-relaxed">
+              Submit inspection requests directly through our dashboard.
+            </p>
           </div>
-        ))}
-      </div>
+          <div>
+            <h3 className="text-3xl font-semibold mb-4">2. Assign a Vendor</h3>
+            <p className="text-lg leading-relaxed">
+              Vendors receive order offers based on their service area and choose to accept assignments in real time.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-3xl font-semibold mb-4">3. Receive Report</h3>
+            <p className="text-lg leading-relaxed">
+              Get completed reports with status tracking and secure storage.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
-
-export default About;

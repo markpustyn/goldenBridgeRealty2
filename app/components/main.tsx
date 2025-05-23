@@ -12,7 +12,7 @@ function Main() {
   }, []);
 
   return (
-    <main className="relative h-screen w-full overflow-hidden">
+    <main className="relative h-screen w-full overflow-hidden ">
       <Image
         src='/backgrnd.jpg'
         alt="House Background"
@@ -24,13 +24,13 @@ function Main() {
       <div className="relative flex flex-col items-center justify-center space-y-6 h-full">
         <h1
           ref={textRef}
-          className="text-4xl md:text-6xl text-white text-center max-w-4xl font-extrabold text-nowrap"
+          className="text-5xl md:text-6xl text-white text-center max-w-4xl font-extrabold text-nowrap"
         >
-         Propert Valuation Solutions
+         Property Valuation Solutions
         </h1>
         <div className='pt-4'>
         <InteractiveHoverButton>
-          Request Demo
+          Join the Waitlist
         </InteractiveHoverButton>
         </div>
       </div>

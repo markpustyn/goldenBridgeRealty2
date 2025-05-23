@@ -6,10 +6,10 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xs">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 mt-4">
         <Link href="/" className="flex items-center">
-          <Image className="h-12 mr-3" alt="Flowbite Logo" src={'/logo.png'} height={50} width={50} />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">PreciseVal Capital</span>
+          <Image className="h-12 mr-3" alt="PreciseVal Logo" src={'/logo.png'} height={150} width={60} />
+          <span className="self-center text-4xl font-semibold whitespace-nowrap text-white">PreciseVal Capital</span>
         </Link>
         <div className="flex md:order-2">
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
@@ -17,17 +17,17 @@ const Navbar = () => {
             <li className="relative text-xl">
             </li>
             <li>
-              <Link href="/" className="block py-2 text-white rounded hover:bg-sky-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-sky-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-xl">
+              <Link href="/" className="block py-2 text-white rounded hover:bg-sky-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-sky-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-2xl">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/services" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-sky-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-sky-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-xl">
+              <Link href="/services" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-sky-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-sky-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-2xl">
                 Services
               </Link>
             </li>
             <li>
-            <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-sky-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-sky-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-xl">
+            <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-sky-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-sky-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-2xl">
                 Contact
               </Link>
             </li>
