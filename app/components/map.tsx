@@ -1,28 +1,28 @@
+import Link from 'next/link';
 import Image from 'next/image';
-
 function Map() {
   return (
     <div className="w-full bg-white py-16 px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-        {/* Swapped: Text and Button Section */}
+        {/* Text and CTA Section */}
         <div className="flex flex-col justify-center">
           <h1 className="md:text-5xl sm:text-3xl text-2xl font-bold py-6">
-            Servicing Areas
+            Join Our Nationwide Network
           </h1>
-          <p className='text-xl'>
-            We stand fully equipped to offer our comprehensive services to clients across the United States. With a network of proficient agents and brokers strategically positioned, we are primed to deliver meticulous real estate valuation services in close proximity to your location.
+          <p className="text-xl">
+            We are actively expanding our coverage and seeking reliable property inspection vendors across the U.S. As part of our network, you will get access to consistent orders, streamlined tools, and fast payments—all from one powerful platform.
           </p>
-          {/* Horizontal Line */}
           <hr className="my-6 border-b-4 border-blue-600 max-w-3/4 items-center" />
-          {/* <button className="bg-black text-[#00df9a] hover:text-black hover:bg-[#00df9a] duration-75 w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
-            Get Started
-          </button> */}
+          <Link  href='/vendors' className="self-start bg-blue-600 text-white px-8 py-2 rounded-md hover:bg-blue-700 transition text-xl">
+            Join the Network
+          </Link>
         </div>
-        {/* Swapped: Image Section */}
+
+        {/* Image Section */}
         <Image
           className="w-[500px] mx-auto my-4"
           src={'/map.png'}
-          alt="/"
+          alt="Service Area Map"
           width={500}
           height={500}
         />
