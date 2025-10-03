@@ -9,8 +9,7 @@ export default function Footer() {
         {/* Company Info */}
         <div className="max-w-md">
         <Link href="/" className="flex items-center">
-          <Image className="h-12 mr-3 bg-black" alt="Flowbite Logo" src={'/logo.png'} height={50} width={50} />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">PreciseVal Capital</span>
+          <Image className="mr-3" alt="Blue Grid Valuations Logo" src={'/blackLogo.svg'} height={100} width={300} />
         </Link>
           <p className="text-base leading-relaxed">
             A modern platform offering end-to-end property inspection and valuation tools built for speed, scale, and compliance.
@@ -26,14 +25,14 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div className="text-base space-y-2">
-          <p>Email: <a href="mailto:support@preciseval.com" className="text-blue-600 hover:underline">support@preciseval.com</a></p>
+          <p>Email: <a href="mailto:support@bluegridvaluations.com" className="text-blue-600 hover:underline">support@bluegridvaluations.com</a></p>
           <p>Phone: (123) 456-7890</p>
           <p>Sacramento, CA</p>
         </div>
       </div>
 
       <div className="mt-12 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} PreciseVal Capital. All rights reserved.
+        © {new Date().getFullYear()} BlueGrid Valuations. All rights reserved.
       </div>
     </footer>
   );

@@ -36,7 +36,7 @@ export default function VendorSignupPage() {
       <div className="max-w-4xl mx-auto mb-16 space-y-6 text-center">
         <h1 className="text-4xl font-bold text-blue-700">Vendor Resource Center</h1>
         <p className="text-lg text-gray-700 leading-relaxed">
-          At <strong>PreciseVal Capital</strong>, we’re building more than a platform—we’re creating a partnership. The Vendor Resource Center offers all the tools, training, and tech you need to succeed in today’s fast-moving inspection world.
+          At <strong>Blue Grid Valuations</strong>, we’re building more than a platform—we’re creating a partnership. The Vendor Resource Center offers all the tools, training, and tech you need to succeed in today’s fast-moving inspection world.
         </p>
         <div className="bg-blue-100 rounded-lg p-6 text-left space-y-4">
           <ul className="list-disc list-inside text-gray-800 text-lg">
@@ -47,7 +47,7 @@ export default function VendorSignupPage() {
             <li>Ongoing product updates with improved workflow tools</li>
           </ul>
           <p className="text-gray-700 text-lg">
-            Whether you're just starting out or scaling your operation, PreciseVal Capital equips you with what you need—every step of the way.
+            Whether you're just starting out or scaling your operation, Blue Grid Valuations equips you with what you need—every step of the way.
           </p>
         </div>
       </div>

@@ -8,8 +8,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xs">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 mt-4">
         <Link href="/" className="flex items-center">
-          <Image className="h-12 mr-3 bg-black" alt="PreciseVal Logo" src={'/logo.png'} height={150} width={60} />
-          <span className="self-center text-4xl font-semibold whitespace-nowrap text-black">PreciseVal Capital</span>
+          <Image className="mr-3" alt="Blue Grid Valuations Logo" src={'/blackLogo.svg'} height={100} width={300} />
         </Link>
         <div className="flex md:order-2">
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">

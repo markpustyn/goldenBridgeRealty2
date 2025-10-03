@@ -22,7 +22,7 @@ function Info() {
             Valuation Services, Built for Scale
           </h2>
           <p className="text-lg leading-relaxed mb-6">
-            PreciseVal Capital offers nationwide inspection and preservation services for both residential and commercial properties. From securing assets to providing detailed BPOs and Drive-By Exterior Inspections, we streamline the full valuation lifecycle.
+            Blue Grid Valuations offers nationwide inspection and preservation services for both residential and commercial properties. From securing assets to providing detailed BPOs and Drive-By Exterior Inspections, we streamline the full valuation lifecycle.
           </p>
           <button className="self-start bg-blue-600 text-white px-10 py-2 rounded-md hover:bg-blue-700 transition text-xl">
             Learn More
