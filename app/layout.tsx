@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "Blue Grid Property Inspections",
+  title: "Blue Grid Valuation",
   description:
-    "Blue Grid Property Inspections provides smart, software-driven reports for property inpsections. Our platform streamlines inspections with clear, accurate, and data-backed insights for homeowners, brokers, and clients.",
+    "Blue Grid Property Valuation provides smart, software-driven reports for property inpsections. Our platform streamlines inspections with clear, accurate, and data-backed insights for homeowners, brokers, and clients.",
 };
 
 

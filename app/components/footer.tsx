@@ -18,15 +18,15 @@ export default function Footer() {
 
         {/* Navigation */}
         <div className="flex flex-col space-y-4 text-base">
-          <a href="#solutions" className="hover:text-blue-600 transition">Solutions</a>
-          <a href="#about" className="hover:text-blue-600 transition">About</a>
-          <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
+          <a href="/" className="hover:text-blue-600 transition">About</a>
+          <a href="/vendors" className="hover:text-blue-600 transition">Vendors</a>
+          <a href="/contact" className="hover:text-blue-600 transition">Contact</a>
         </div>
 
         {/* Contact Info */}
         <div className="text-base space-y-2">
           <p>Email: <a href="mailto:support@bluegridvaluations.com" className="text-blue-600 hover:underline">support@bluegridvaluations.com</a></p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Phone: (916) 994-2883</p>
           <p>Sacramento, CA</p>
         </div>
       </div>

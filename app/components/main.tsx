@@ -3,6 +3,7 @@
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import Link from 'next/link';
 
 function Main() {
   const textRef = useRef<HTMLHeadingElement | null>(null);
@@ -29,9 +30,11 @@ function Main() {
          Property Valuation Solutions
         </h1>
         <div className='pt-4'>
+          <Link href={'/contact'}>
         <InteractiveHoverButton>
           Join the Waitlist
         </InteractiveHoverButton>
+        </Link>
         </div>
       </div>
     </main>
