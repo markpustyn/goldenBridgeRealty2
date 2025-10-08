@@ -28,21 +28,13 @@ export default function VendorSignupPage() {
     <div className="min-h-screen bg-white px-4 pt-48 pb-16">
       {/* Info Section */}
       <div className="max-w-4xl mx-auto mb-16 space-y-6 text-center">
-        <h1 className="text-4xl font-bold text-blue-700">Vendor Resource Center</h1>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          At <strong>Blue Grid Valuations</strong>, we are building more than a platform. We are creating a partnership.
-          The Vendor Resource Center offers tools, training, and tech to help you win in a fast moving inspection world.
-        </p>
-        <div className="bg-blue-100 rounded-lg p-6 text-left space-y-4">
-          <ul className="list-disc list-inside text-gray-800 text-lg">
-            <li>Modern mobile first dashboard interface</li>
-            <li>Step by step video training modules</li>
-            <li>Downloadable inspection and compliance resources</li>
-            <li>Automatic job tracking and real time status updates</li>
-            <li>Ongoing product updates with better workflow tools</li>
-          </ul>
-          <p className="text-gray-700 text-lg">
-            Whether you are starting out or scaling your operation, Blue Grid Valuations equips you every step of the way.
+        <h1 className="text-4xl font-bold text-blue-700">Join our Vendor Network</h1>
+        <div className="p-6 text-left space-y-4">          
+          <p className="text-black text-lg">
+            At Blue Grid Valuations, we are building a trusted network of vendors and 
+            real estate professionals who share our commitment to precision, reliability, 
+            and growth. If you are ready to partner with a company that values quality 
+            and innovation, complete our quick application below and we will contact you shortly. 
           </p>
         </div>
       </div>

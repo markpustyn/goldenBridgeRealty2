@@ -25,12 +25,9 @@ export default function Contact() {
 
   return (
     <Card className="w-full max-w-7xl mx-auto p-8 shadow-lg bg-white/90 backdrop-blur rounded-2xl">
-      <CardHeader>
-        <CardTitle className="text-2xl">
-          Fill out the form and we will get back to you shortly.
+        <CardTitle className="text-2xl ">
+          Complete the form and we will get back to you shortly.
         </CardTitle>
-      </CardHeader>
-
       <form onSubmit={handleSubmit}>
         <div className="space-y-6">
           <div className="flex flex-col md:flex-row gap-4">

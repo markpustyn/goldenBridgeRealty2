@@ -21,7 +21,7 @@ function Contact() {
 
           {/* Form */}
           <div className="w-full">
-            <div className="rounded-2xl border border-gray-200 p-4 sm:p-6 lg:p-8 shadow-sm">
+            <div className="p-4 sm:p-6 lg:p-8">
               <ContactForm />
             </div>
           </div>
