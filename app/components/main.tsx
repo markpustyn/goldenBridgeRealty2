@@ -25,7 +25,7 @@ function Main() {
       <div className="relative flex flex-col items-center justify-center space-y-6 h-full">
         <h1
           ref={textRef}
-          className="text-5xl md:text-6xl text-white text-center max-w-4xl font-extrabold text-nowrap"
+          className="text-4xl md:text-6xl text-white text-center max-w-4xl font-bold"
         >
          Property Valuation Solutions
         </h1>

@@ -9,7 +9,7 @@ function Map() {
           <h1 className="md:text-5xl sm:text-3xl text-2xl font-bold py-6">
             Join Our Nationwide Network
           </h1>
-          <p className="text-xl">
+          <p className="text-md md:text-xl">
             We are actively expanding our coverage and seeking reliable property inspection vendors across the U.S. As part of our network, you will get access to consistent orders, streamlined tools, and fast payments—all from one powerful platform.
           </p>
           <hr className="my-6 border-b-4 border-blue-600 max-w-3/4 items-center" />
@@ -23,8 +23,8 @@ function Map() {
           className="w-[500px] mx-auto my-4"
           src={'/map.png'}
           alt="Service Area Map"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
         />
       </div>
     </div>
