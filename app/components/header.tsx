@@ -26,7 +26,7 @@ const Navbar = () => {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-sky-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="navbar-sticky"
             aria-expanded={open}
           >
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <Link
                   href="/"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-2xl text-gray-900 md:text-white hover:bg-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-sky-700 md:dark:hover:bg-transparent"
+                  className="block py-2 text-2xl text-gray-900 md:text-white hover:bg-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   About
                 </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
                 <Link
                   href="/vendors"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-2xl text-gray-900 md:text-white hover:bg-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-sky-700 md:dark:hover:bg-transparent"
+                  className="block py-2 text-2xl text-gray-900 md:text-white hover:bg-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   Vendors
                 </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-2xl text-gray-900 md:text-white hover:bg-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-sky-700 md:dark:hover:bg-transparent"
+                  className="block py-2 text-2xl text-gray-900 md:text-white hover:bg-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   Contact
                 </Link>
