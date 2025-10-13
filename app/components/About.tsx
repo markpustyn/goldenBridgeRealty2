@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="bg-white text-gray-900 px-6 flex flex-col items-center pt-48 pb-10">
       <section className="mb-24 text-center max-w-7xl">
-        <h2 className="text-5xl md:text-6xl font-semibold mb-12 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-semibold mb-12 leading-tight">
           <TextAnimate animation="blurInUp" by="character" once>
             How It Works
             </TextAnimate>

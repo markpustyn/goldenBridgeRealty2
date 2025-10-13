@@ -43,7 +43,7 @@ export default function VendorSignupPage() {
       <div className="max-w-4xl mx-auto">
         <Card className="p-8 shadow-xl border border-blue-100">
           <CardContent className="space-y-6">
-            <h2 className="text-3xl font-bold text-center text-blue-900">Sign Up as a Vendor</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-900">Sign Up as a Vendor</h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* honeypot and metadata */}
