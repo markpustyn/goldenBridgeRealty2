@@ -32,7 +32,7 @@ function Main() {
         <div className='pt-4'>
           <Link href={'/contact'}>
         <InteractiveHoverButton>
-          Join the Waitlist
+          Get Started
         </InteractiveHoverButton>
         </Link>
         </div>
