@@ -83,13 +83,14 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/login"
+                <a
+                  href="https://app.bluegridvaluations.com/"
+                  target='_blank'
                   onClick={() => setOpen(false)}
                   className="block px-6 py-2 text-lg font-semibold text-white bg-blue-600 rounded-full shadow-md transition-all hover:bg-blue-700 hover:shadow-lg focus:ring-2 focus:ring-blue-300"
                 >
-                  Login
-                </Link>
+                  Sign In
+                </a>
               </li>
             </ul>
           </div>
