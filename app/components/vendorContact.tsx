@@ -40,8 +40,9 @@ export default function VendorSignupPage() {
               className="mt-4"
             >
               <Button
-                variant="outline"
-                className="border-2 border-white text-blue-700 hover:bg-white hover:text-blue-800 font-semibold text-lg px-8 py-3 rounded-full transition-all duration-300"
+                variant="outline" 
+              
+                className="cursor-pointer border-2 border-white text-blue-700 hover:bg-white hover:text-blue-800 font-semibold text-lg px-8 py-3 rounded-full transition-all duration-300"
               >
                 Sign Up Now
               </Button>
