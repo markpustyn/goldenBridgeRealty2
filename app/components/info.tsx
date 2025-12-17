@@ -26,10 +26,7 @@ function Info() {
             Valuation Services, Built for Scale
           </h2>
           <p className="text-lg leading-relaxed mb-8">
-            Blue Grid Valuations offers secure, cloud based technology for managing vendor networks, automating order assignments,
-             and ensuring timely delivery of standardized inspection reports, including Property Condition Reports (PCRs) / Drive-By Property Condition Reports, 
-             and Post Disaster Inspections. Our system integrates real-time tracking, data validation, 
-             and compliance monitoring to maintain consistency across residential and commercial properties. 
+Blue Grid Valuations delivers secure cloud based technology that manages vendor networks automates order assignment and ensures fast delivery of standardized inspection reports through AVM+PCR solutions. By integrating current property condition data into the valuation process the Evaluation strengthens AVM results without sacrificing automation efficiency.
           </p>
           <Link href="/contact" className="self-start bg-blue-600 text-white px-10 py-3 rounded-md hover:bg-blue-700 transition text-xl">
             Learn More

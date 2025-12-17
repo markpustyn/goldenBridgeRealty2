@@ -9,17 +9,20 @@ export default function Solutions() {
         {/* Solutions List */}
         
         {/* Text Section */}
-        <div className="flex flex-col justify-center w-full px-4">
-          <h2 className="md:text-4xl text-3xl font-bold mb-6">
-            Solutions We Offer
-          </h2>
+      <div className="flex flex-col justify-center w-full px-4">
+        <h2 className="md:text-4xl text-3xl font-bold mb-6">
+          Solutions We Offer
+        </h2>
           <p className="text-md md:text-xl leading-relaxed mb-8">
-            Our platform provides a full suite of property inspection and valuation services to support lenders, investors, and property managers across the U.S. With a trusted network of professionals, we ensure timely, accurate, and compliant reporting to help you make better real estate decisions.
+            We deliver property condition reports that support AVM+PCR solutions for Credit Unions and Banks across the U.S. Our secure platform focuses exclusively on timely accurate inspections completed by a trusted nationwide vendor network to strengthen valuation workflows and meet compliance requirements.
           </p>
-          <Link href="/contact" className="self-start bg-blue-600 text-white px-10 py-3 rounded-md hover:bg-blue-700 transition text-xl">
-            Get Started
-          </Link>
-        </div>
+        <Link
+          href="/contact"
+          className="self-start bg-blue-600 text-white px-10 py-3 rounded-md hover:bg-blue-700 transition text-xl"
+        >
+          Get Started
+        </Link>
+      </div>
         <div className="p-6 w-full md:p-8">
           <div className="grid grid-cols-1 gap-8 text-[16px] md:text-[22px]">
             <div className="flex items-center space-x-6">
@@ -27,7 +30,7 @@ export default function Solutions() {
                 <FaRegClipboard size={32} className="text-blue-600" />
               </div>
             <TextAnimate animation="slideRight" by="character">
-                Drive-By Exterior Inspections
+                Property Condition Reports (PCR)
                 </TextAnimate>
             </div>
             <div className="flex items-center space-x-6">

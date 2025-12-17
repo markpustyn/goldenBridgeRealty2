@@ -16,9 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Blue Grid Valuations",
   description:
-    "Blue Grid Property Valuation provides smart, software-driven reports for property inspections. Our platform streamlines inspections with clear, accurate, and data-backed insights for homeowners, brokers, and clients.",
+    "Blue Grid Valuations provides AVM+PCR solutions for banks and credit unions by combining automated valuation models with current property condition reports. Support evaluation workflows risk management and regulatory requirements with consistent data driven results.",
 };
-
 
 export default function RootLayout({
   children,
