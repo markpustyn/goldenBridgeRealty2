@@ -23,7 +23,7 @@ function Join() {
     <section className="w-full bg-blue-800 py-20 px-6 text-white">
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Join as a Client
+          Get Started Today
         </h2>
         <p className="text-lg md:text-xl">
           Get access to professional property solutions. Complete the form below to join our client network.

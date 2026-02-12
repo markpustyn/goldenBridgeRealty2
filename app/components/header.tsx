@@ -59,7 +59,7 @@ const Navbar = () => {
                 <Link
                   href="/"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-700 transition-colors"
+                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-800 transition-colors"
                 >
                   About
                 </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Link
                   href="/vendors"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-700 transition-colors"
+                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-800 transition-colors"
                 >
                   Vendors
                 </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-700 transition-colors"
+                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-800 transition-colors"
                 >
                   Contact
                 </Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
                   href="https://app.bluegridvaluations.com/"
                   target='_blank'
                   onClick={() => setOpen(false)}
-                  className="block px-6 py-2 text-lg font-semibold text-white bg-blue-600 rounded-full shadow-md transition-all hover:bg-blue-700 hover:shadow-lg focus:ring-2 focus:ring-blue-300"
+                  className="block px-6 py-2 text-lg font-semibold text-white bg-blue-700 rounded-full shadow-md transition-all hover:bg-blue-800 hover:shadow-lg focus:ring-2 focus:ring-blue-300"
                 >
                   Sign In
                 </a>

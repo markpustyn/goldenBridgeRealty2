@@ -1,65 +1,98 @@
-import { FaRegClipboard, FaHome, FaRegBuilding, FaSearchLocation } from 'react-icons/fa';
+import { FaRegClipboard, FaHome, FaRegBuilding, FaSearchLocation } from "react-icons/fa";
 import { TextAnimate } from "@/components/magicui/text-animate";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Solutions() {
   return (
-    <section className="bg-white text-gray-900 px-6 py-32 flex flex-col items-center">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-        {/* Solutions List */}
-        
-        {/* Text Section */}
-      <div className="flex flex-col justify-center w-full px-4">
-        <h2 className="md:text-4xl text-3xl font-bold mb-6">
-          Solutions We Offer
-        </h2>
-          <p className="text-md md:text-xl leading-relaxed mb-8">
-            We deliver property condition reports that support AVM+PCR solutions for Credit Unions and Banks across the U.S. Our secure platform focuses exclusively on timely accurate inspections completed by a trusted nationwide vendor network to strengthen valuation workflows and meet compliance requirements.
-          </p>
-        <Link
-          href="/contact"
-          className="self-start bg-blue-600 text-white px-10 py-3 rounded-md hover:bg-blue-700 transition text-xl"
-        >
-          Get Started
-        </Link>
-      </div>
-        <div className="p-6 w-full md:p-8">
-          <div className="grid grid-cols-1 gap-8 text-[16px] md:text-[22px]">
-            <div className="flex items-center space-x-6">
-              <div className="bg-blue-100 rounded-full p-3">
-                <FaRegClipboard size={32} className="text-blue-600" />
-              </div>
-            <TextAnimate animation="slideRight" by="character">
-                Property Condition Reports (PCR)
-                </TextAnimate>
-            </div>
-            <div className="flex items-center space-x-6">
-              <div className="bg-blue-100 rounded-full p-3">
-                <FaHome size={32} className="text-blue-600" />
-              </div>
-            <TextAnimate animation="slideRight" by="character">
-                Interior Property Inspections
-                </TextAnimate>
-            </div>
-            <div className="flex items-center space-x-6">
-              <div className="bg-blue-100 rounded-full p-3">
-                <FaRegBuilding size={32} className="text-blue-600" />
-              </div>
-            <TextAnimate animation="slideRight" by="character">
-                Post Disaster Inspections
-                </TextAnimate>
-            </div>
-            <div className="flex items-center space-x-6">
-              <div className="bg-blue-100 rounded-full p-3">
-                <FaSearchLocation size={32} className="text-blue-600" />
-              </div>
-            <TextAnimate animation="slideRight" by="character">
-                Occupancy Verification
-                </TextAnimate>
-            </div>
-          </div>
-        </div>
+    <section className="bg-white text-gray-900 w-full py-24">
+      <div className="w-full px-6 md:px-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-5xl mx-auto">
 
+          {/* Card 1 */}
+          <div className="bg-white rounded-xl shadow-sm border p-10 flex flex-col items-center text-center hover:shadow-md transition">
+            <div className="bg-blue-100 rounded-full p-4 mb-6">
+              <FaRegClipboard size={36} className="text-blue-700" />
+            </div>
+            <h3 className="text-lg md:text-xl font-semibold mb-3">
+              <TextAnimate animation="slideRight" by="character">
+                Property Condition Reports (PCR)
+              </TextAnimate>
+            </h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
+              Structured exterior reports documenting current property condition with clear photo support.
+            </p>
+            <Link
+              href="/contact"
+              className="text-blue-700 text-sm font-medium hover:underline"
+            >
+              Request Sample
+            </Link>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-xl shadow-sm border p-10 flex flex-col items-center text-center hover:shadow-md transition">
+            <div className="bg-blue-100 rounded-full p-4 mb-6">
+              <FaHome size={36} className="text-blue-700" />
+            </div>
+            <h3 className="text-lg md:text-xl font-semibold mb-3">
+              <TextAnimate animation="slideRight" by="character">
+                Interior Property Inspections
+              </TextAnimate>
+            </h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
+              Detailed interior inspections providing accurate documentation of property condition.
+            </p>
+            <Link
+              href="/contact"
+              className="text-blue-700 text-sm font-medium hover:underline"
+            >
+              Request Sample
+            </Link>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-xl shadow-sm border p-10 flex flex-col items-center text-center hover:shadow-md transition">
+            <div className="bg-blue-100 rounded-full p-4 mb-6">
+              <FaRegBuilding size={36} className="text-blue-700" />
+            </div>
+            <h3 className="text-lg md:text-xl font-semibold mb-3">
+              <TextAnimate animation="slideRight" by="character">
+                Post Disaster Inspections
+              </TextAnimate>
+            </h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
+              On site inspections assessing property impact following storms, fires, or natural events.
+            </p>
+            <Link
+              href="/contact"
+              className="text-blue-700 text-sm font-medium hover:underline"
+            >
+              Request Sample
+            </Link>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white rounded-xl shadow-sm border p-10 flex flex-col items-center text-center hover:shadow-md transition">
+            <div className="bg-blue-100 rounded-full p-4 mb-6">
+              <FaSearchLocation size={36} className="text-blue-700" />
+            </div>
+            <h3 className="text-lg md:text-xl font-semibold mb-3">
+              <TextAnimate animation="slideRight" by="character">
+                Occupancy Verification
+              </TextAnimate>
+            </h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
+              Verification services confirming property occupancy and current status.
+            </p>
+            <Link
+              href="/contact"
+              className="text-blue-700 text-sm font-medium hover:underline"
+            >
+              Request Sample
+            </Link>
+          </div>
+
+        </div>
       </div>
     </section>
   );

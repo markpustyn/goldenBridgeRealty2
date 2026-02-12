@@ -26,9 +26,9 @@ function Info() {
             Valuation Services, Built for Scale
           </h2>
           <p className="text-lg leading-relaxed mb-8">
-Blue Grid Valuations delivers secure cloud based technology that manages vendor networks automates order assignment and ensures fast delivery of standardized inspection reports through AVM+PCR solutions. By integrating current property condition data into the valuation process the Evaluation strengthens AVM results without sacrificing automation efficiency.
+A full range of property inspection services delivering actionable insights for lenders, servicers, and investors. These solutions are powered by a proprietary inspection platform — a unified suite of applications designed to modernize property inspections and streamline the ordering, reporting, and oversight process.
           </p>
-          <Link href="/contact" className="self-start bg-blue-600 text-white px-10 py-3 rounded-md hover:bg-blue-700 transition text-xl">
+          <Link href="/contact" className="self-start bg-blue-700 text-white px-6 py-2 hover:bg-blue-800 transition text-xl rounded-full">
             Learn More
           </Link>
         </div>

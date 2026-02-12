@@ -3,50 +3,52 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FaRegHandshake } from "react-icons/fa";
 
 export default function VendorSignupPage() {
-
   return (
-    <div className="min-h-screen px-4 pt-48 pb-16">
+    <div className="min-h-screen bg-white px-6 pt-48 pb-24">
+      
       {/* Info Section */}
-      <div className="max-w-4xl mx-auto mb-16 space-y-6 text-center">
-        <h1 className="text-4xl font-extrabold text-blue-700 tracking-tight">
+      <div className="text-center max-w-3xl mx-auto pb-20">
+        <div className="inline-flex items-center justify-center bg-blue-100 rounded-full p-4 mb-6">
+          <FaRegHandshake size={28} className="text-blue-600" />
+        </div>
+
+        <h1 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
           Join Our Vendor Network
         </h1>
-        <div className="p-6 bg-white/70 rounded-xl shadow-sm border border-blue-100 text-left space-y-4">
-          <p className="text-gray-800 text-lg leading-relaxed">
-            Thank you for your interest in joining the Blue Grid Network.
-            At Blue Grid Valuations, we are building a trusted network of
-            vendors and real estate professionals who share our commitment
-            to precision, reliability, and growth.
-          </p>
-          <p className="text-gray-800 text-lg leading-relaxed">
-            If you are interested in partnering with us, follow the link
-            to our application, fill out the required fields, and we’ll
-            contact you shortly.
-          </p>
-        </div>
+
+        <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">
+          We are building a trusted network of inspection professionals.
+          Submit an application to partner with us and receive structured,
+          consistent inspection assignments.
+        </p>
       </div>
 
-      {/* Card Section */}
+      {/* CTA Section */}
       <div className="max-w-4xl mx-auto">
-        <Card className="bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-          <CardContent className="py-20 flex flex-col items-center justify-center space-y-6">
-            <h2 className="text-2xl font-semibold text-white">
-              Ready to Get Started?
+        <Card className="border shadow-sm rounded-2xl hover:shadow-md transition">
+          <CardContent className="py-20 px-10 flex flex-col items-center text-center space-y-6">
+            
+            <h2 className="text-2xl md:text-3xl font-semibold text-black">
+              Ready to Get Started
             </h2>
+
+            <p className="text-gray-600 max-w-xl leading-relaxed">
+              Complete the vendor application and our team will follow up with onboarding details.
+            </p>
+
             <a
               href="https://app.bluegridvaluations.com/broker-sign-up"
-              className="mt-4"
+              target="_blank"
+              rel="noreferrer"
             >
-              <Button
-                variant="outline" 
-              
-                className="cursor-pointer border-2 border-white text-blue-700 hover:bg-white hover:text-blue-800 font-semibold text-lg px-8 py-3 rounded-full transition-all duration-300"
-              >
+              <Button className="mt-4 px-10 py-6 text-base font-semibold rounded-xl">
                 Sign Up Now
               </Button>
             </a>
+
           </CardContent>
         </Card>
       </div>

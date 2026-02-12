@@ -21,8 +21,8 @@ function Map() {
           <p className="text-md md:text-xl">
             We are actively expanding our coverage and seeking reliable property inspection vendors across the U.S. As part of our network, you will get access to consistent orders, streamlined tools, and fast payments—all from one powerful platform.
           </p>
-          <hr className="my-6 border-b-4 border-blue-600 max-w-3/4 items-center" />
-          <Link  href='/vendors' className="self-start bg-blue-600 text-white px-8 py-2 rounded-md hover:bg-blue-700 transition text-xl">
+          <hr className="my-6 border-b-4 border-blue-700 max-w-3/4 items-center" />
+          <Link  href='/vendors' className="self-start bg-blue-700 text-white px-6 py-2 hover:bg-blue-800 transition text-xl rounded-full">
             Join the Network
           </Link>
         </div>

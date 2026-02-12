@@ -16,8 +16,8 @@ export default function Home() {
       {/* <Quote/> */}
       <Landing/>
       <Info />
-
-      <About />
+{/* 
+      <About /> */}
       <Solutions/>
       <Map />
 

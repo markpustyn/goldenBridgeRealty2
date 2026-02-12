@@ -27,7 +27,7 @@ function Main() {
           ref={textRef}
           className="text-4xl md:text-6xl text-white text-center max-w-4xl font-bold"
         >
-         Property Valuation Solutions
+         Property Inspection Solutions
         </h1>
         <div className='pt-4'>
           <Link href={'/contact'}>
