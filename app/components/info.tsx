@@ -29,7 +29,7 @@ function Info() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
 
           {/* Left Feature List */}
-          <div className="space-y-8 w-92">
+          <div className="space-y-8 w-96">
 
             {/* Item 1 */}
             <div>
