@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Company Info */}
         <div className="max-w-md">
         <Link href="/" className="flex items-center">
-          <Image className="mr-3" alt="Blue Grid Valuations Logo" src={'/blackLogo.svg'} height={100} width={300} />
+          <Image className="mr-3" alt="Blue Grid Valuations Logo" src={'/blueGridLogo.svg'} height={100} width={300} />
         </Link>
           <p className="text-base leading-relaxed">
             A modern platform offering end-to-end property inspection and valuation tools built for speed, scale, and compliance.

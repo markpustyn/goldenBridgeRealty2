@@ -1,35 +1,40 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
 function Map() {
   return (
-    <div className="w-full bg-white py-16 px-6 mb-24">
-                <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-6 text-center mb-12">
-            Join Our Nationwide Network
-          </h1>
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-16">
-        {/* Text and CTA Section */}
+    <section className="w-full bg-white py-20 px-6 mb-24 mt-12">
+      <div className="max-w-5xl mx-auto text-center">
 
-        {/* Image Section */}
-        <Image
-          className="w-[600px] mx-auto my-4"
-          src={'/map2.png'}
-          alt="Service Area Map"
-          width={500}
-          height={500}
-        />
-                <div className="flex flex-col justify-center">
-          <p className="text-md md:text-xl">
-            We are actively expanding our coverage and seeking reliable property inspection vendors across the U.S. As part of our network, you will get access to consistent orders, streamlined tools, and fast payments—all from one powerful platform.
+        <h2 className="md:text-5xl sm:text-3xl text-[23px] font-bold text-gray-900 mb-4">
+          Join Our Nationwide Network
+        </h2>
+
+        <p className="text-gray-600 mb-12">
+          Become a vendor
+        </p>
+
+        <Card className="max-w-3xl mx-auto p-10 md:p-12 shadow-lg rounded">
+          <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8">
+            We are actively expanding coverage across the U.S. and onboarding real estate brokers.
+            As part of our network, you gain access to consistent assignments, simplified reporting tools,
+            and fast payments.
           </p>
-          <hr className="my-6 border-b-4 border-blue-700 max-w-3/4 items-center" />
-          <Link  href='/vendors' className="self-start bg-blue-700 text-white px-6 py-2 hover:bg-blue-800 transition text-xl rounded-full">
-            Join the Network
+
+          <div className="h-1 bg-blue-700 rounded-full mx-auto mb-8 w-1/2" />
+          <Link href="/vendors">
+          <Button
+            className="inline-flex items-center justify-center rounded bg-blue-700 text-white px-8 py-8 text-base md:text-lg transition hover:bg-blue-800"
+          >
+            Broker Network
+          </Button>
           </Link>
-        </div>
+        </Card>
+        
 
       </div>
-      
-    </div>
+    </section>
   );
 }
 

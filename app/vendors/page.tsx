@@ -1,14 +1,14 @@
 
 import Contact from "../components/contactForm";
 import Footer from "../components/footer";
-import OtherNavbar from "../components/otherHeader";
+import Header from "../components/header";
 import VendorContact from "../components/vendorContact";
 
 
 export default function Home() {
   return (
     <div>
-            <OtherNavbar />
+            <Header />
             <VendorContact/>
       <Footer />
     </div>

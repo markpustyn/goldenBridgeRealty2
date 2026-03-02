@@ -3,98 +3,147 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur">
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 mt-4">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <Image
-            className="mr-3"
-            alt="Blue Grid Valuations Logo"
-            src="/newLogo.svg"
-            height={100}
-            width={300}
-          />
-        </Link>
-
-        {/* Right side controls */}
-        <div className="flex items-center md:order-2">
-          {/* Hamburger */}
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-sticky"
-            aria-expanded={open}
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
+    <nav className="w-full z-50 border-b-2 pb-4">
+      <div className="mx-auto max-w-screen-xl px-4 pt-4">
+        <div className="">
+          <div className="relative flex items-center px-4 py-3 md:px-6">
+            {/* Logo (left) */}
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                alt="Blue Grid Valuations Logo"
+                src="/blueGridLogo.svg"
+                height={80}
+                width={260}
+                priority
+                className="h-auto w-[200px] md:w-[260px]"
               />
-            </svg>
-          </button>
+            </Link>
 
-          {/* Nav links */}
+            {/* Center links (desktop) */}
+            <div className="hidden md:absolute md:left-1/2 md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2">
+              <ul className="flex items-center gap-10 font-medium">
+                <li>
+                  <Link
+                    href="/"
+                    className="text-[19px] text-black hover:text-blue-800 transition-colors"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/vendors"
+                    className="text-[19px] text-black hover:text-blue-800 transition-colors"
+                  >
+                    Vendors
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="text-[19px] text-black hover:text-blue-800 transition-colors"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right side: Get Started (desktop) + hamburger (mobile) */}
+            <div className="ml-auto flex items-center gap-3">
+              <Link
+                href="https://app.bluegridvaluations.com/"
+                target="_blank"
+                className="hidden md:inline-flex"
+              >
+                <Button className="inline-flex items-center justify-center rounded bg-blue-700 px-6 py-6 text-[15px] text-white tracking-tight transition-all duration-200 hover:bg-blue-800 hover:shadow-lg active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                  Get Started
+                </Button>
+              </Link>
+
+              <button
+                type="button"
+                onClick={() => setOpen((v) => !v)}
+                className="inline-flex items-center justify-center rounded-xl p-2 text-gray-700 md:hidden hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                aria-controls="navbar-mobile"
+                aria-expanded={open}
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile dropdown */}
           <div
-            id="navbar-sticky"
-            className={`${open ? 'block' : 'hidden'} absolute left-0 right-0 top-full mt-2 mx-2 border-gray-100 bg-white backdrop-blur p-4 md:p-0 md:bg-transparent md:static md:mt-0 md:mx-0 md:border-0 md:flex md:w-auto md:items-center md:space-x-10`}
+            id="navbar-mobile"
+            className={[open ? 'block' : 'hidden', 'md:hidden px-4 pb-4 pt-3'].join(' ')}
           >
-            <ul className="flex flex-col gap-2 md:flex-row md:gap-10 md:items-center font-medium">
+            <ul className="flex flex-col gap-2">
               <li>
                 <Link
                   href="/"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-800 transition-colors"
+                  className="block rounded-xl px-3 py-2 text-lg font-medium text-gray-900 hover:bg-white/70"
                 >
                   About
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/vendors"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-800 transition-colors"
+                  className="block rounded-xl px-3 py-2 text-lg font-medium text-gray-900 hover:bg-white/70"
                 >
                   Vendors
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-xl text-gray-900 md:text-white hover:text-blue-800 transition-colors"
+                  className="block rounded-xl px-3 py-2 text-lg font-medium text-gray-900 hover:bg-white/70"
                 >
                   Contact
                 </Link>
               </li>
-              <li>
-                <a
+
+              <li className="pt-2">
+                <Link
                   href="https://app.bluegridvaluations.com/"
-                  target='_blank'
+                  target="_blank"
+                  className="block"
                   onClick={() => setOpen(false)}
-                  className="block px-6 py-2 text-lg font-semibold text-white bg-blue-700 rounded-full shadow-md transition-all hover:bg-blue-800 hover:shadow-lg focus:ring-2 focus:ring-blue-300"
                 >
-                  Sign In
-                </a>
+                  <Button className="w-full inline-flex items-center justify-center rounded bg-blue-700 px-6 py-6 text-[15px] text-white tracking-tight transition-all duration-200 hover:bg-blue-800 hover:shadow-lg active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                    Get Started
+                  </Button>
+                </Link>
               </li>
             </ul>
           </div>
-          {/* End nav links */}
         </div>
       </div>
     </nav>
