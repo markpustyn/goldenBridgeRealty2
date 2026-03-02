@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Blue Grid Inspections",
+  title: "Blue Grid Valuations",
   description:
     "Property data solutions and inspections delivering accurate documentation, reliable reporting, and scalable nationwide coverage for residential and real estate portfolios across multiple markets.",
 };
