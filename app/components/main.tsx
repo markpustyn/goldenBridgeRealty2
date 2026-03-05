@@ -44,9 +44,9 @@ function Main() {
         </div>
         </section>
           <section className="mt-16">
-            <div className="mx-auto max-w-3xl">
+            <div className="mx-auto max-w-3xl text-center">
               <div className="px-6 py-10 md:px-10 md:py-12">
-                <h2 className="mt-4 text-xl md:text-3xl font-bold tracking-tight text-gray-900">
+                <h2 className="mt-4 text-xl md:text-3xl font-bold tracking-tight text-gray-900 text-center">
                   We capture the data to help you make confident and informed decisions about your property.
                 </h2>
                 <div className="mt-8 flex flex-wrap justify-center gap-3">
