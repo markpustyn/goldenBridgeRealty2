@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link href="/" className="flex items-center gap-2">
               <Image
                 alt="Blue Grid Valuations Logo"
-                src="/blueGridLogo.svg"
+                src="/newLogo.svg"
                 height={80}
                 width={260}
                 priority
@@ -30,18 +30,18 @@ const Navbar = () => {
               <ul className="flex items-center gap-10 font-medium">
                 <li>
                   <Link
-                    href="/"
+                    href="/about"
                     className="text-[19px] text-black hover:text-blue-800 transition-colors"
                   >
-                    About
+                    About Us
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/vendors"
+                    href="/service-area"
                     className="text-[19px] text-black hover:text-blue-800 transition-colors"
                   >
-                    Vendors
+                    Service Area
                   </Link>
                 </li>
                 <li>
