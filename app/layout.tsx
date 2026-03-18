@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Blue Grid Valuations",
-  description:
-    "Property data solutions and inspections delivering accurate documentation, reliable reporting, and scalable nationwide coverage for residential and real estate portfolios across multiple markets.",
+  title: "Golden Bridge Realty",
+description:
+  "Golden Bridge Realty is a South Carolina real estate company serving buyers, sellers, and investors with local market knowledge, personalized guidance, and reliable real estate services."
 };
 
 export default function RootLayout({
