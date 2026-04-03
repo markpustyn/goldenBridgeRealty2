@@ -1,112 +1,65 @@
 'use client'
 
-import { useState } from "react";
 import Image from "next/image";
 
 function Info() {
-  const [open, setOpen] = useState<number | null>(0);
-
-  const toggle = (index: number) => {
-    setOpen(open === index ? null : index);
-  };
-
   return (
-    <section className="w-full bg-white py-40 px-6">
+    <section className="w-full bg-white py-32 px-6">
       <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-14 items-center">
+          <div className="flex justify-center">
+            <div className="w-full max-w-md">
+              <div className="overflow-hidden rounded-2xl shadow-lg border border-gray-200 bg-gray-100">
+                <Image
+                  src="/broker.jpg"
+                  alt="Agent portrait"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
 
-        {/* Top Heading */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-            Software Built for Modern Property Oversight
-          </h2>
-          <p className="text-sm md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A purpose built platform delivering structured exterior documentation 
-            and actionable reporting for lenders, servicers, and investors.
-          </p>
-        </div>
-
-        {/* Split Section */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-
-          {/* Left Feature List */}
-          <div className="space-y-8 w-96">
-
-            {/* Item 1 */}
-            <div>
-              <button
-                onClick={() => toggle(0)}
-                className="text-left w-full"
-              >
-                <h3 className={`text-3xl font-semibold border-l-4 border-blue-700 pl-5 cursor-pointer
-                  ${open === 0 ? 'text-blue-700' : 'text-gray-900'}
-                  `}>
-                  Lower Operational Costs
+              <div className="mt-5 text-center md:text-left">
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  First Last Name
                 </h3>
-              </button>
-
-              {open === 0 && (
-                <p className="text-gray-600 mt-3 pl-5 md:text-lg text-sm">
-                  Reduce reliance on full inspections while maintaining exterior visibility.
+                <p className="text-blue-700 font-medium mt-1">
+                  Licensed Real Estate Broker
                 </p>
-              )}
+              </div>
             </div>
-
-            {/* Item 2 */}
-            <div>
-              <button
-                onClick={() => toggle(1)}
-                className="text-left w-full"
-              >
-                <h3 className={`text-3xl font-semibold border-l-4 border-blue-700 pl-5 cursor-pointer
-                  ${open === 1 ? 'text-blue-700' : 'text-gray-900'}
-                  `}>
-                  Faster Turnaround Times
-                </h3>
-              </button>
-
-              {open === 1 && (
-                <p className="text-gray-600 mt-3 pl-5 md:text-lg text-sm">
-                  Report submitted in under three days designed for high volume portfolios.
-                </p>
-              )}
-            </div>
-
-            {/* Item 3 */}
-            <div>
-              <button
-                onClick={() => toggle(2)}
-                className="text-left w-full"
-              >
-                <h3 className={`text-3xl font-semibold border-l-4 border-blue-700 pl-5 cursor-pointer
-                  ${open === 2 ? 'text-blue-700' : 'text-gray-900'}
-                  `}>
-                  Clear Structured Data
-                </h3>
-              </button>
-
-              {open === 2 && (
-                <p className="text-gray-600 mt-3 pl-5 md:text-lg text-sm">
-                  Standardized reporting that supports underwriting and risk review.
-                </p>
-              )}
-            </div>
-
           </div>
 
-          {/* Right Image */}
-          <div className="flex justify-center md:justify-end">
-            <Image
-              className="max-w-md md:max-w-xl xl:max-w-2xl object-contain"
-              src="/software4.png"
-              alt="Inspection software dashboard"
-              width={1600}
-              height={1600}
-              priority
-            />
+          <div>
+            <h3 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+              Real Estate Guidance Built on Trust, Experience, and Local Insight
+            </h3>
+
+            <div className="space-y-5 text-gray-600 text-sm md:text-lg leading-relaxed">
+              <p>
+                We believe real estate is more than a transaction. It is a major
+                life decision that deserves careful guidance and personal
+                attention. Whether you are purchasing your first home, selling a
+                property, or exploring investment opportunities, our goal is to
+                help you move forward with clarity.
+              </p>
+
+              <p>
+                Golden Bridge Realty is focused on building lasting relationships
+                through honest communication, market expertise, and dependable
+                service. We take pride in understanding each client’s goals and
+                creating a strategy that fits their needs.
+              </p>
+
+              <p>
+                From the first conversation to the closing table, we are here to
+                provide support, answer questions, and help you make confident
+                decisions every step of the way.
+              </p>
+            </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

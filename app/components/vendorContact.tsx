@@ -35,10 +35,6 @@ export default function VendorSignupPage() {
               Ready to Get Started
             </h2>
 
-            <p className="text-gray-600 max-w-xl leading-relaxed">
-              Complete the vendor application and our team will follow up with onboarding details.
-            </p>
-
             <a
               href="https://app.bluegridvaluations.com/broker-sign-up"
               target="_blank"

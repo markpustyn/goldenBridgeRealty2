@@ -55,7 +55,7 @@ function Pricing() {
           {plans.map((plan) => (
             <Card
               key={plan.name}
-              className={`relative overflow-hidden rounded-2xl border p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl ${
+              className={`relative overflow-hidden rounded-none border p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl ${
                 plan.featured
                   ? "border-blue-700 ring-1 ring-blue-700/20"
                   : "border-gray-200"

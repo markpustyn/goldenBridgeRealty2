@@ -28,30 +28,20 @@ const Navbar = () => {
             {/* Center links (desktop) */}
             <div className="hidden md:absolute md:left-1/2 md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2">
               <ul className="flex items-center gap-10 font-medium">
-                <li>
-                  <Link
-                    href="/about"
-                    className="text-[19px] text-black hover:text-blue-800 transition-colors"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/service-area"
-                    className="text-[19px] text-black hover:text-blue-800 transition-colors"
-                  >
-                    Service Area
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-[19px] text-black hover:text-blue-800 transition-colors"
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {[
+                  { href: "/about", label: "About Us" },
+                  { href: "/service-area", label: "Service Area" },
+                  { href: "/contact", label: "Contact" },
+                ].map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="relative text-[19px] text-black after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 

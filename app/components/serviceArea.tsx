@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function ServiceArea() {
   return (
-    <section className="bg-white text-gray-900 w-full py-24">
+    <section className="bg-gray-200 text-gray-900 w-full py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
