@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm("mgvkdyje");
+  const [state, handleSubmit] = useForm("sample");
   if (state.succeeded) {
     return (
       <Card className="w-full max-w-3xl mx-auto p-10 shadow-lg bg-white/90 backdrop-blur rounded-2xl text-center">

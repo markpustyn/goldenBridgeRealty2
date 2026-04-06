@@ -12,11 +12,9 @@ function Contact() {
             <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6">
               Contact Us
             </h1>
-            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-              We are excited to show you how Blue Grid advanced solutions for property inspections can boost your efficiency,
-              improve turnaround times, and help you manage orders with confidence. To schedule a personalized demo, fill out
-              the form and a team member will reach out shortly.
-            </p>
+<p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+  Have a question or ready to get started? Whether you're buying, selling, or exploring your options, reach out and get clear answers and guidance you can trust.
+</p>
           </div>
 
           {/* Form */}

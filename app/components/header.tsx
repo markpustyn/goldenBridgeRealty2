@@ -16,12 +16,12 @@ const Navbar = () => {
             {/* Logo (left) */}
             <Link href="/" className="flex items-center gap-2">
               <Image
-                alt="Blue Grid Valuations Logo"
+                alt="Golden Bridge Realty Logo"
                 src="/newLogo.svg"
                 height={80}
                 width={260}
                 priority
-                className="h-auto w-[200px] md:w-[260px]"
+                className="w-[200px] md:w-[260px]"
               />
             </Link>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
             {/* Right side: Get Started (desktop) + hamburger (mobile) */}
             <div className="ml-auto flex items-center gap-3">
               <Link
-                href="https://app.bluegridvaluations.com/"
+                href="/"
                 target="_blank"
                 className="hidden md:inline-flex"
               >
@@ -122,7 +122,7 @@ const Navbar = () => {
 
               <li className="pt-2">
                 <Link
-                  href="https://app.bluegridvaluations.com/"
+                  href="/"
                   target="_blank"
                   className="block"
                   onClick={() => setOpen(false)}

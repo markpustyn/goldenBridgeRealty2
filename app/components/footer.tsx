@@ -9,30 +9,30 @@ export default function Footer() {
         {/* Company Info */}
         <div className="max-w-md">
         <Link href="/" className="flex items-center">
-          <Image className="mr-3" alt="Blue Grid Valuations Logo" src={'/blueGridLogo.svg'} height={100} width={300} />
+          <Image className="mr-3" alt="Golden Bridge Realty Logo" src={'/newLogo.svg'} height={100} width={300} />
         </Link>
           <p className="text-base leading-relaxed">
-            A modern platform offering end-to-end property inspection and valuation tools built for speed, scale, and compliance.
+           Expert guidance, local market knowledge, and personalized support every step of the way.
           </p>
         </div>
 
         {/* Navigation */}
         <div className="flex flex-col space-y-4 text-base">
           <a href="/" className="hover:text-blue-700 transition">About</a>
-          <a href="/vendors" className="hover:text-blue-700 transition">Vendors</a>
+          <a href="/vendors" className="hover:text-blue-700 transition">Service Area</a>
           <a href="/contact" className="hover:text-blue-700 transition">Contact</a>
         </div>
 
         {/* Contact Info */}
         <div className="text-base space-y-2">
-          <p>Email: <a href="mailto:support@bluegridvaluations.com" className="text-blue-700 hover:underline">support@bluegridvaluations.com</a></p>
-          <p>Phone: (916) 994-2883</p>
-          <p>Sacramento, CA</p>
+          <p>Email: <a href="mailto:support@goldenbridgerealty.com" className="text-blue-700 hover:underline">support@goldenbridgerealty.com</a></p>
+          <p>Phone: (916) 123-4567</p>
+          <p>Charlotte, NC</p>
         </div>
       </div>
 
       <div className="mt-12 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} BlueGrid Valuations. All rights reserved.
+        © {new Date().getFullYear()} Golden Bridge Realty. All rights reserved.
       </div>
     </footer>
   );
